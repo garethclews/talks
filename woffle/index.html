@@ -1,0 +1,142 @@
+ <!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+
+    <title>woffle </title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Custom css for making it look prettier -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Options -->
+    <meta name="transition" content="none">
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <!-- Title slide -->
+        <section class="title"
+                 data-background="#282a36">
+
+          <p class="maintitle">woffle <i class="fas fa-comments"></i></p>
+          <p class="slogan">An NLP project template for dummies, by dummies</p>
+          <hr class="titleruler"/>
+          <p class="author">Gareth Clews</p>
+          <img src="assets/dsc.png" class="logo"/>
+        </section>
+
+        <!-- Contents -->
+        <section>
+          <h4>Contents</h4>
+
+          <ol>
+            <li>Overview</li>
+            <li>Live coding</li>
+            <li>Resources</li>
+            <li>Feedback</li>
+          </ol>
+
+        </section>
+
+
+        <!-- Problem Statement -->
+        <section>
+
+          <section class="title"
+                  data-background="#282a36">
+            <p class="maintitle">Overview</p>
+          </section>
+
+          <section>
+            <ul>
+              <li>Optimus</li>
+              <li>Class wars</li>
+              <li>Return of the functions</li>
+            </ul>
+          </section>
+
+          <section>
+            <ol>
+              <li>Task based breakdown</li>
+              <ul>
+                <li>Parse</li>
+                <li>Embed</li>
+                <li>Collect</li>
+                <li>Label</li>
+              </ul>
+              <li>View across existing projects</li>
+              <li>Abstraction level: <span style="color: #ff79c6;">9999</span></li>
+            </ol>
+          </section>
+
+        </section>
+        <section>
+
+          <section class="title"
+                   data-background="#282a36">
+            <p class="maintitle">Live coding</p>
+          </section>
+        </section>
+
+        <section>
+          <section class="title"
+            data-background="#282e36">
+            <p class="maintitle">Resources</p>
+          </section>
+
+          <section>
+            <ul>
+              <li><a href="https://github.com/datasciencecampus/woffle">Repository</a></li>
+              <li><a href="https://datasciencecampus.github.io/woffle">Documentation</a></li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section class="title"
+                   data-background="#282a36">
+            <p class="maintitle">Feedback</p>
+            <p><i class="fas fa-comments"></i></p>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <!---------------------------------------------------------------->
+    <!-- Scripts -->
+
+    <!-- reveal -->
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+
+    <!-- jquery -->
+    <script src="js/jquery.js"></script>
+    <!-- making asterisks purple since 2018 -->
+    <script>
+      $('blockquote').each(function () {
+        $(this).html($(this).html().replace(/(\*)/g, '<span style="color: #9b59b6;">$1</span>'));
+      });
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>be more functional</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/solarized.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+        <section data-background="img/logo.jpg"></section>
+        <section class="fragments">
+          <p>Talk basically stolen from Aleksey Kutepov
+            <span class="fragment" style="color: #fb7e14;">he's so cool</span></p>
+
+          <p class="fragment"><a href="https://youtu.be/pUN3algpvMs">Go watch it</a></p>
+        </section>
+        <section>
+          What is functional programming?
+          <ul class="fragments">
+            <li class="fragment"><em style="color: #fb7e14;">Trying not to sound glib: </em>Programming using functions</li>
+            <li class="fragment">Implementation of 'lambda calculus'</li>
+            <li class="fragment">Trying to treat functions in programming like functions in mathematics</li>
+          </ul>
+        </section>
+        <section>
+          Why bother?
+          <ul class="fragments">
+            <li class="fragment">Reduces the possible types of bugs you experience</li>
+            <li class="fragment">Reduces boilerplate</li>
+            <li class="fragment">Code is super easy to move around</li>
+            <li class="fragment">Code is clear and obvious</li>
+            <li class="fragment">Chaining functions is equivalent to function composition</li>
+            <li class="fragment">Declarative</li>
+          </ul>
+
+          <aside class="notes">
+            <p>Okay all this is great, but FOR WHY?!</p>
+            <p>Benefits of functional programming...</p>
+            <ol>
+              <li>Hugely cut down on the possible types of bugs in your program </li>
+              <li>Much easier to move code around</li>
+              <li>Super easy to test in  statically typed languages (damn!)</li>
+              <li>Chaining methods is really composition of functions, with no side effects
+                this can become a tool for succinct and safe code</li>
+              <li>You avoid having mutable data as a key for a hash map (looking at you Emily)
+                show of hands, who has done this?</li>
+              <li>The current state of programming is moving away from an OO paradigm to one
+                where functional programming is king, even if this takes 3, 4 or 5
+                generations, that inertia is there so being ahead of the curve will make
+                you super employable and able to do your work for a long time to come</li>
+              <li>You get to write smart functions to operate on dumb data, how is this not
+                desirable?</li>
+          </aside>
+        </section>
+        <section>
+          All of this lets me:
+          <ol>
+            <li>write smart functions to operate on dumb data</li>
+            <li>avoid interaction</li>
+          </ol>
+        </section>
+        <section>
+          <section>Rules</section>
+          <section>
+            <ol>
+              <li>no loops</li>
+              <li>no non-ternary if statements</li>
+              <li>function definitions are single returns</li>
+              <li>no side effects</li>
+              <li>no assignments inside functions</li>
+              <li>no lists</li>
+              <li>functions may only have at most one argument</li>
+            </ol>
+          </section>
+        </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

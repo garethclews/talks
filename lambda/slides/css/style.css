@@ -1,0 +1,5 @@
+/* Important, best fonts */
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono');
+
+body { font: 'Fira Sans'; }

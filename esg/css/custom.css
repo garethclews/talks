@@ -1,0 +1,26 @@
+/* @global */
+*{
+  font-family: 'Fira Sans';
+}
+.bold{font-weight: bold;}
+.italic{font-weight: italic;}
+.oblique{font-weight: oblique;}
+
+
+body {
+  background: #2c3e50;
+}
+
+/* @group 1 */
+
+.reveal .slides .title {
+  font-family: 'Fira Sans'
+  font-size: 64px;
+  color: #efefef;
+}
+
+
+.reveal .slides section p.red {
+  color: #e74c3c;
+}
+
